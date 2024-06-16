@@ -29,6 +29,56 @@
   <nav class="aboutus-txt2">
     <span style="font-size: 24px;">Podes encontrarnos en:<br/><br/></span><span style="font-size: 32px;">Av. Cabildo 1677<br/>Paseo Colon 490</span>
   </nav>
+  <form id="aboutus-form" onsubmit="form()">
+    <label for="name">Nombre:  </label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre.." style="height:25px; width: 400px; font-size: large; font-family: 'KronaOne';"> <br/> <br/>
+
+    <label for="email">E-mail:  </label>
+    <input type="text" id="email" name="email" placeholder="Tu e-mail.." style="height:25px; width:400px; font-size: large; font-family: 'KronaOne';"> <br/> <br/>
+
+    <label for="fono">Telefono:  </label>
+    <input type="text" id="fono" name="fono" placeholder="Tu telefono.." style="height:25px; width:400px; font-size: large; font-family: 'KronaOne';"> <br/> <br/>
+
+    <label for="tipo">Tipo de consulta:  </label>
+    <select id="tipo" name="tipo" style="height:25px; width:300px; font-size: large; font-family: 'KronaOne';">
+      <option value="0">Elija su consulta...</option>
+      <option value="1">Servicio tecnico</option>
+      <option value="2">Comprar un celular</option>
+      <option value="3">Vender mi celular</option>
+      <option value="4">Asesoramiento</option>
+      <option value="5">Otro</option>
+    </select> <br/> <br/>
+
+    <label for="consulta">Que necesita?<br/><br/></label>
+    <textarea id="consulta" name="consulta" placeholder="Describanos su consulta..." style="height:20vh; width:50vw; font-size: large; font-family: 'KronaOne';"></textarea> <br/> <br/>
+    
+    <input class="enviar-btn" type="submit">
+  </form>
+  <script type="text/javascript">
+    function form() {
+      let name = document.querySelector('#name').value;
+      let email = document.querySelector('#email').value;
+      let fono = document.querySelector('#fono').value;
+      let tipo = document.querySelector('#tipo').value;
+      let consulta = document.querySelector('#consulta').value;
+
+      if (name == "" || email == "" || fono == "" || tipo == 0 || consulta == "") {
+        alert("Faltan datos por llenar");
+      }
+      else {
+        if (tipo == 1)
+          alert("Muchas gracias por su consulta, " + name + ". Pronto le enviaremos un mensaje al numero " + fono + " sobre nuestro servicio tecnico.")
+        else if (tipo == 2)
+          alert("Muchas gracias por su consulta, " + name + ". Pronto le enviaremos un mensaje al numero " + fono + " sobre nuestra disponibilidad.")
+        else if (tipo == 3)
+          alert("Muchas gracias por su consulta, " + name + ". Pronto le enviaremos un mensaje al numero " + fono + " sobre la venta de su celular.")
+        else if (tipo == 4)
+          alert("Muchas gracias por su consulta, " + name + ". Pronto le enviaremos un mail a " + email + " para brindarte asesoramiento.")
+        else if (tipo == 5)
+          alert("Muchas gracias por su consulta, " + name + ". Pronto le enviaremos un mail a " + email + " como respuesta.")
+      }
+    }
+  </script>
 </nav>
 <footer>
   <div class="footer">

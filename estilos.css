@@ -1,7 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    width: 86.5vw;
-    height: 100hw;
     background-color: #333333;
 }
 @font-face {
@@ -9,7 +10,7 @@ body {
     src: url(media/KronaOne-Regular.ttf);
 }
 .header {
-    width: 90vw;
+    width: 100vw;
     height: 110px;
     padding: 0 8%;
     position: fixed;
@@ -48,12 +49,10 @@ body {
 .body-content {
     justify-content: center;
     padding-top: 110px;
-    margin-left: 100px;
 }
 .body-content-list {
     justify-content: center;
     padding-top: 110px;
-    margin-left: 80px;
 }
 .footer {
     width: 100%;
@@ -97,7 +96,7 @@ body {
     background: rgb(32, 32, 32);
 }
 .contactos li{
-    padding: 10px 40px;
+    padding: 10px 30px;
 } 
 .home-txt {
     text-align: center;
@@ -142,7 +141,7 @@ body {
     padding-top: 30px;
 }
 .aboutus-img img{
-    width: 110%;
+    width: 100%;
     height: auto;
 }
 .aboutus-txt1 {
@@ -150,7 +149,6 @@ body {
     text-align: center;
     color: white;
     padding-top: 50px;
-    padding-left: 60px;
     padding-bottom: 10px;
     font-family:'KronaOne';
     font-size: x-large;
@@ -160,16 +158,43 @@ body {
     text-align: center;
     color: white;
     padding-top: 50px;
-    padding-left: 60px;
     padding-bottom: 50px;
     font-family:'KronaOne';
+}
+#aboutus-form {
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family:'KronaOne';
+    font-size: x-large;
+}
+.enviar-btn {
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+    font-family:'KronaOne';
+    font-size: large;
+    background: #252525;
+    justify-content: left;
+}
+.enviar-btn:hover {
+    background: rgb(64, 64, 64);
+    cursor: pointer;
+}
+.enviar-btn:active {
+    color: rgb(102, 102, 102);
+    background: rgb(32, 32, 32);
 }
 .celulares-txt {
     justify-content: center;
     text-align: center;
     color: white;
     padding-top: 40px;
-    padding-left: 60px;
     padding-bottom: 20px;
     font-family:'KronaOne';
     font-size: 64px;
@@ -179,17 +204,16 @@ body {
     text-align: center;
     color: white;
     padding-top: 10px;
-    padding-left: 40px;
     padding-bottom: 30px;
     font-family:'KronaOne';
     font-size: large;
 }
 .celulares-nav{
-    justify-content: space-between;
+    justify-content: center;
 }
 .celulares-menu {
     padding: 10px 0;
-    margin-left: 4vw;
+    justify-content: center;
 }
 .celulares-menu li{
     display: inline-block;
