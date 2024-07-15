@@ -171,6 +171,16 @@ body {
     font-family:'KronaOne';
     font-size: x-large;
 }
+#service-form {
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family:'KronaOne';
+    font-size: x-large;
+}
 .enviar-btn {
     border-radius: 25px;
     text-decoration: none;
@@ -240,12 +250,29 @@ body {
     font-family:'KronaOne';
     font-size: 64px;
 }
+.service-estimacion {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    font-family:'KronaOne';
+    font-size: 40px;
+}
+#service-total {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+    font-family:'KronaOne';
+    font-size: 20px;
+}
 .service-nav{
     justify-content: space-between;
 }
 .service-menu {
-    padding: 10px 0;
-    margin-left: 40px;
+    margin-left: 5vw;
 }
 .service-menu li{
     display: inline-block;
